@@ -1,5 +1,5 @@
 ---
-layout: prfile
+layout: profile
 title: Profile
 permalink: profile
 ---
