@@ -10,7 +10,7 @@ description: A Github Pages (Jekyll) template based on TailwindCSS
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Vcard-Pages
+author: Jonas Walden
 author-bio: A Way to host Vcard business info  # change to false to hide
 author-image: me.png  # file must be in the /assets/img/ folder
 
