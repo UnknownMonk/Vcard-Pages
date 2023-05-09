@@ -24,7 +24,7 @@ nav-menu:
   permalink: bitcoin
 - text: Blog
   permalink: blog
-  - text: Blog
+  - text: Profile
   permalink: profile
 
 # use false to turn off any social media links
