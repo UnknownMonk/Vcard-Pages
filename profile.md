@@ -1,6 +1,5 @@
 ---
-
-layout: page
+layout: prfile
 title: Profile
 permalink: profile
 ---
