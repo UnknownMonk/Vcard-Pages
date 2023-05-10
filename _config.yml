@@ -49,7 +49,7 @@ plugins:
     - jekyll-seo-tag
     
     
-    languageCode:           "en"
+languageCode:           "en"
 title:                  "Flowbite"
 baseURL:                "https://flowbite.com/docs/"
 enableInlineShortcodes: true
