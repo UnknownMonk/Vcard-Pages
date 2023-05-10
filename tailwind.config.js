@@ -13,7 +13,7 @@ theme-color: indigo # indigo|yellow|pink|green|stone|
 author: Satoshi Nakamoto
 author-bio: Creator of Bitcoin  # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
-
+darkMode: 'class'
 # navigation menu
 show-nav-menu: true
 
