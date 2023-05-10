@@ -1,47 +1,46 @@
-# change the followings to match your Github username and repo name
-baseurl: "/Vcard-Pages" # the name of your github repo
-url: "https://UnknownMonk.github.io" # the url of your github pages
+const defaultTheme = require('tailwindcss/defaultTheme')
 
-# site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './**/*.html'
+  ],
+  darkMode: 'media',
+  theme: {
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              padding: "0",
+              color: "#1F2933",
+              backgroundColor: "#F3F3F3"
+            },
+            code: {
+              padding: "0.2em 0.4em",
+              backgroundColor: "#F3F3F3",
+              color: "#DD1144",
+              fontWeight: "400",
+              "border-radius": "0.25rem"
+            },
+            "code::before": false,
+            "code::after": false,
+            "blockquote p:first-of-type::before": false,
+            "blockquote p:last-of-type::after": false,
+          },
+        },
+      },
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
 
-# color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 
-# homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
-author-image: 279.png  # file must be in the /assets/img/ folder
-darkMode: 'class'
-# navigation menu
-show-nav-menu: true
-
-nav-menu:
-- text: About
-  permalink: about
-- text: Bitcoin
-  permalink: bitcoin
-- text: Blog
-  permalink: blog
-
-# use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
-medium: false
-google-scholar: false
-email: false
-
-# footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
-
-# google analytics
-google-analytics: G-WCRC1TC2V5
-
-# jekyll plugins - no need to change
-plugins:
-    - jekyll-seo-tag
+}
