@@ -4,42 +4,83 @@ module.exports = {
   content: [
     './**/*.html'
   ],
-  darkMode: 'media',
-  theme: {
-    extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            pre: {
-              padding: "0",
-              color: "#1F2933",
-              backgroundColor: "#F3F3F3"
+   safelist: [
+        'w-64',
+        'w-1/2',
+        'rounded-l-lg',
+        'rounded-r-lg',
+        'bg-gray-200',
+        'grid-cols-4',
+        'grid-cols-7',
+        'h-6',
+        'leading-6',
+        'h-9',
+        'leading-9',
+        'shadow-lg',
+    ],
+    darkMode: 'class',
+    theme: {
+        extend: {
+            // sidebar mobile fix
+            maxWidth: {
+                '2xs': '16rem',
+                '8xl': '90rem',
             },
-            code: {
-              padding: "0.2em 0.4em",
-              backgroundColor: "#F3F3F3",
-              color: "#DD1144",
-              fontWeight: "400",
-              "border-radius": "0.25rem"
+            fontFamily: {
+                sans: [
+                    'Inter',
+                    'ui-sans-serif',
+                    'system-ui',
+                    '-apple-system',
+                    'system-ui',
+                    'Segoe UI',
+                    'Roboto',
+                    'Helvetica Neue',
+                    'Arial',
+                    'Noto Sans',
+                    'sans-serif',
+                    'Apple Color Emoji',
+                    'Segoe UI Emoji',
+                    'Segoe UI Symbol',
+                    'Noto Color Emoji',
+                ],
+                body: [
+                    'Inter',
+                    'ui-sans-serif',
+                    'system-ui',
+                    '-apple-system',
+                    'system-ui',
+                    'Segoe UI',
+                    'Roboto',
+                    'Helvetica Neue',
+                    'Arial',
+                    'Noto Sans',
+                    'sans-serif',
+                    'Apple Color Emoji',
+                    'Segoe UI Emoji',
+                    'Segoe UI Symbol',
+                    'Noto Color Emoji',
+                ],
+                mono: [
+                    'ui-monospace',
+                    'SFMono-Regular',
+                    'Menlo',
+                    'Monaco',
+                    'Consolas',
+                    'Liberation Mono',
+                    'Courier New',
+                    'monospace',
+                ],
             },
-            "code::before": false,
-            "code::after": false,
-            "blockquote p:first-of-type::before": false,
-            "blockquote p:last-of-type::after": false,
-          },
+            fontSize: {
+                '2xs': '0.625rem',
+            },
         },
-      },
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
     },
-  },
-
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-
-}
+    variants: {
+        extend: {
+            backgroundColor: ['active'],
+        },
+    },
+    plugins: [require('./plugin')],
+};
