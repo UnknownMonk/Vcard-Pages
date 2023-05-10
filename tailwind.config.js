@@ -1,86 +1,47 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+# change the followings to match your Github username and repo name
+baseurl: "/Vcard-Pages" # the name of your github repo
+url: "https://UnknownMonk.github.io" # the url of your github pages
 
-module.exports = {
-  content: [
-    './**/*.html'
-  ],
-   safelist: [
-        'w-64',
-        'w-1/2',
-        'rounded-l-lg',
-        'rounded-r-lg',
-        'bg-gray-200',
-        'grid-cols-4',
-        'grid-cols-7',
-        'h-6',
-        'leading-6',
-        'h-9',
-        'leading-9',
-        'shadow-lg',
-    ],
-    darkMode: 'class',
-    theme: {
-        extend: {
-            // sidebar mobile fix
-            maxWidth: {
-                '2xs': '16rem',
-                '8xl': '90rem',
-            },
-            fontFamily: {
-                sans: [
-                    'Inter',
-                    'ui-sans-serif',
-                    'system-ui',
-                    '-apple-system',
-                    'system-ui',
-                    'Segoe UI',
-                    'Roboto',
-                    'Helvetica Neue',
-                    'Arial',
-                    'Noto Sans',
-                    'sans-serif',
-                    'Apple Color Emoji',
-                    'Segoe UI Emoji',
-                    'Segoe UI Symbol',
-                    'Noto Color Emoji',
-                ],
-                body: [
-                    'Inter',
-                    'ui-sans-serif',
-                    'system-ui',
-                    '-apple-system',
-                    'system-ui',
-                    'Segoe UI',
-                    'Roboto',
-                    'Helvetica Neue',
-                    'Arial',
-                    'Noto Sans',
-                    'sans-serif',
-                    'Apple Color Emoji',
-                    'Segoe UI Emoji',
-                    'Segoe UI Symbol',
-                    'Noto Color Emoji',
-                ],
-                mono: [
-                    'ui-monospace',
-                    'SFMono-Regular',
-                    'Menlo',
-                    'Monaco',
-                    'Consolas',
-                    'Liberation Mono',
-                    'Courier New',
-                    'monospace',
-                ],
-            },
-            fontSize: {
-                '2xs': '0.625rem',
-            },
-        },
-    },
-    variants: {
-        extend: {
-            backgroundColor: ['active'],
-        },
-    },
-    plugins: [require('./plugin')],
-};
+# site information used in page title, meta data etc.
+title: "Tailpages: Tailwind + Github Pages"
+description: A Github Pages (Jekyll) template based on TailwindCSS
+
+# color theme for links
+theme-color: indigo # indigo|yellow|pink|green|stone|
+
+# homepage information
+author: Satoshi Nakamoto
+author-bio: Creator of Bitcoin  # change to false to hide
+author-image: 279.png  # file must be in the /assets/img/ folder
+
+# navigation menu
+show-nav-menu: true
+
+nav-menu:
+- text: About
+  permalink: about
+- text: Bitcoin
+  permalink: bitcoin
+- text: Blog
+  permalink: blog
+
+# use false to turn off any social media links
+twitter: https://twitter.com/
+facebook: https://facebook.com/
+instagram: https://instagram.com/
+github: https://github.com/
+linkedin: https://linkedin.com/
+medium: false
+google-scholar: false
+email: false
+
+# footer information
+footer-msg: "Powered by Tailpages"
+footer-msg-link: https://github.com/harrywang/tailpages
+
+# google analytics
+google-analytics: G-WCRC1TC2V5
+
+# jekyll plugins - no need to change
+plugins:
+    - jekyll-seo-tag
