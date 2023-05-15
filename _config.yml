@@ -15,7 +15,7 @@ author-bio: A Way to host Vcard business info  # change to false to hide
 author-image: me.png  # file must be in the /assets/img/ folder
 
 # navigation menu
-show-nav-menu: true
+show-nav-menu: false
 
 nav-menu:
 - text: About
