@@ -27,7 +27,7 @@ permalink: profile
         </div>
     </div> 
     <div class="dark flex flex-col items-center pb-10">
-        <img class=" absolute top-[-7rem] left-[50%] w-44 h-44 mb-3 rounded-full shadow-lg" src="{{site.baseurl}}/assets/img/me.png" alt="Bonnie image"/>
+        <img class=" absolute -top-1 left-[50%] w-44 h-44 mb-3 rounded-full shadow-lg" src="{{site.baseurl}}/assets/img/me.png" alt="Bonnie image"/>
         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Jonas Walden</h5>
         <span class="text-sm text-gray-500 dark:text-gray-400">Developer</span>
         <span class="text-sm text-gray-500 dark:text-gray-400">Website.com</span>
