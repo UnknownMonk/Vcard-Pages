@@ -11,8 +11,8 @@ permalink: profile
             <span class="sr-only">Open dropdown</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
         </button>
-        <!-- Dropdown menu -->
-<!--         <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+<!--         <!-- Dropdown menu -->
+        <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
             <ul class=" list-none py-2" aria-labelledby="dropdownButton">
             <li>
                 <a href="#" class="no-underline block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
@@ -25,7 +25,7 @@ permalink: profile
             </li>
             </ul>
         </div>
-    </div> -->
+    </div> 
     <div class="dark flex flex-col items-center pb-10">
         <img class=" absolute top-0 left-[50%] w-44 h-44 mb-3 rounded-full shadow-lg" src="{{site.baseurl}}/assets/img/me.png" alt="Bonnie image"/>
         <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Jonas Walden</h5>
